@@ -3,25 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shirini Sweets</title>
+    <title>Shirini Sweets - Authentic Persian Cookies</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <!-- Navigation -->
     <nav id="main-nav">
-        <div class="logo">Shirini Sweets</div>
-        <div class="nav-links">
+        <div class="logo">
+            <img src="images/logo.png" alt="Shirini Sweets" class="logo-img">
+            <span>Shirini Sweets</span>
+        </div>
+        <div class="nav-links" id="navLinks">
             <a href="#home" class="nav-link active">Home</a>
             <a href="#about" class="nav-link">About</a>
             <a href="#cookies" class="nav-link">Cookies</a>
-            <a href="#order" class="nav-link">Order</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="mobile-nav-toggle" id="mobileNavToggle">
+            <i class="fas fa-bars"></i>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="pattern-overlay"></div>
         <div class="hero-content">
             <h1 class="fade-in">Authentic Persian Cookies</h1>
             <p class="fade-in">Handcrafted with love and tradition</p>
@@ -29,48 +37,270 @@
         </div>
     </section>
 
-    <!-- Featured Cookies -->
-    <section id="cookies" class="cookies-section">
-        <h2 class="section-title">Our Signature Cookies</h2>
-        <div class="cookie-container">
-            <!-- Cookie 1 -->
-            <div class="cookie-card fade-in-scroll">
-                <div class="cookie-image">
-                    <img src="images/Kolompeh-Kerman.png" alt="Kolompeh">
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <div class="about-content fade-in-scroll">
+                <div class="about-image">
+                    <img src="images/about-image.jpg" alt="Our Story">
+                    <div class="pattern-frame"></div>
                 </div>
-                <div class="cookie-details">
-                    <h3>Kolompeh</h3>
-                    <p>Traditional Persian date-filled cookies from Kerman province.</p>
-                    <div class="ingredients">
-                        <h4>Ingredients:</h4>
-                        <div class="ingredient-tags">
-                            <span>Rice flour</span>
-                            <span>Butter</span>
-                            <span>Rose water</span>
-                            <span>Cardamom</span>
-                        </div>
-                    </div>
-                    <a href="#order" class="order-now">Order Now</a>
+                <div class="about-text">
+                    <h3>A Taste of Persia</h3>
+                    <p>Welcome to Shirini Sweets, where the rich culinary traditions of Persia come to life through our handcrafted cookies.</p>
+                    <p>For over 30 years, my mother has been perfecting these traditional recipes, passed down through generations. What started as a passion for sharing our cultural heritage has blossomed into a family business dedicated to bringing authentic Persian flavors to your table.</p>
+                    <p>Each cookie is made with premium ingredients, including aromatic cardamom, delicate rose water, and the finest pistachios. We never use preservatives or artificial flavors, ensuring that every bite is as authentic as it is delicious.</p>
+                    <p>From our family to yours, we invite you to experience the magic of Persian confectionery and the love baked into every cookie.</p>
                 </div>
             </div>
-            
-            <!-- Add more cookie cards here -->
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <!-- About content here -->
+    <!-- Featured Cookies -->
+    <section id="cookies" class="cookies-section">
+        <div class="container">
+            <h2 class="section-title">Our Signature Cookies</h2>
+            <div class="cookie-container">
+                <!-- Cookie 1 -->
+                <div class="cookie-card fade-in-scroll">
+                    <div class="cookie-image">
+                        <img src="images/kolompeh.jpg" alt="Kolompeh">
+                    </div>
+                    <div class="cookie-details">
+                        <h3>Kolompeh</h3>
+                        <p>Traditional Persian date-filled cookies from Kerman province, decorated with intricate patterns. These delightful treats feature a buttery dough filled with dates, cardamom, and cinnamon.</p>
+                        <div class="ingredients">
+                            <h4>Ingredients:</h4>
+                            <div class="ingredient-tags">
+                                <span>Rice flour</span>
+                                <span>Butter</span>
+                                <span>Dates</span>
+                                <span>Rose water</span>
+                                <span>Cardamom</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="order-now">Order Now</a>
+                    </div>
+                </div>
+                
+                <!-- Cookie 2 -->
+                <div class="cookie-card fade-in-scroll">
+                    <div class="cookie-image">
+                        <img src="images/ghotab.jpg" alt="Ghotab">
+                    </div>
+                    <div class="cookie-details">
+                        <h3>Ghotab</h3>
+                        <p>Crispy deep-fried pastries from Yazd, shaped like a half-moon and filled with a mixture of crushed almonds, walnuts, pistachios, and fragrant spices, dusted with powdered sugar.</p>
+                        <div class="ingredients">
+                            <h4>Ingredients:</h4>
+                            <div class="ingredient-tags">
+                                <span>Flour</span>
+                                <span>Butter</span>
+                                <span>Pistachios</span>
+                                <span>Almonds</span>
+                                <span>Walnuts</span>
+                                <span>Cardamom</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="order-now">Order Now</a>
+                    </div>
+                </div>
+                
+                <!-- Cookie 3 -->
+                <div class="cookie-card fade-in-scroll">
+                    <div class="cookie-image">
+                        <img src="images/nan-nokhodchi.jpg" alt="Nan-e Nokhodchi">
+                    </div>
+                    <div class="cookie-details">
+                        <h3>Nan-e Nokhodchi</h3>
+                        <p>Delicate melt-in-your-mouth chickpea flour cookies, shaped like a four-leaf clover. These gluten-free treats are lightly scented with cardamom and rose water.</p>
+                        <div class="ingredients">
+                            <h4>Ingredients:</h4>
+                            <div class="ingredient-tags">
+                                <span>Chickpea flour</span>
+                                <span>Powdered sugar</span>
+                                <span>Vegetable oil</span>
+                                <span>Cardamom</span>
+                                <span>Rose water</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="order-now">Order Now</a>
+                    </div>
+                </div>
+                
+                <!-- Cookie 4 -->
+                <div class="cookie-card fade-in-scroll">
+                    <div class="cookie-image">
+                        <img src="images/shirini-keshmeshi.jpg" alt="Shirini Keshmeshi">
+                    </div>
+                    <div class="cookie-details">
+                        <h3>Shirini Keshmeshi</h3>
+                        <p>Soft and chewy raisin cookies that are a popular treat for Persian New Year (Nowruz) celebrations. These cookies are infused with vanilla and studded with plump raisins.</p>
+                        <div class="ingredients">
+                            <h4>Ingredients:</h4>
+                            <div class="ingredient-tags">
+                                <span>Flour</span>
+                                <span>Butter</span>
+                                <span>Raisins</span>
+                                <span>Eggs</span>
+                                <span>Vanilla</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="order-now">Order Now</a>
+                    </div>
+                </div>
+                
+                <!-- Cookie 5 -->
+                <div class="cookie-card fade-in-scroll">
+                    <div class="cookie-image">
+                        <img src="images/baklava.jpg" alt="Baklava">
+                    </div>
+                    <div class="cookie-details">
+                        <h3>Baklava</h3>
+                        <p>Layers of delicate phyllo pastry filled with a mixture of chopped nuts and sweetened with honey syrup infused with rose water. Our Persian style baklava is lighter and less sweet than other regional varieties.</p>
+                        <div class="ingredients">
+                            <h4>Ingredients:</h4>
+                            <div class="ingredient-tags">
+                                <span>Phyllo dough</span>
+                                <span>Pistachios</span>
+                                <span>Walnuts</span>
+                                <span>Honey</span>
+                                <span>Rose water</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="order-now">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Order Form -->
-    <section id="order" class="order-section">
-        <!-- Order form here -->
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Place Your Order</h2>
+            <div class="contact-container fade-in-scroll">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>We're delighted to take your orders! Contact us through any of these methods:</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>(555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>orders@shirinisweets.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Monday-Friday: 9am-5pm</p>
+                                <p>Saturday: 10am-3pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-info">
+                        <h3>Ordering Information</h3>
+                        <p>Please place your orders at least 3 days in advance. For large orders or special events, we recommend contacting us 1-2 weeks ahead.</p>
+                        <p>Minimum order: 1 dozen cookies (can be mixed varieties)</p>
+                        <p>Local delivery available for orders over $50</p>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <h3>Quick Order Form</h3>
+                    <form id="orderForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cookies">Cookies (select all that apply)</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="cookies" value="Kolompeh"> Kolompeh
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="cookies" value="Ghotab"> Ghotab
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="cookies" value="Nan-e Nokhodchi"> Nan-e Nokhodchi
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="cookies" value="Shirini Keshmeshi"> Shirini Keshmeshi
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="cookies" value="Baklava"> Baklava
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">Quantity (dozens)</label>
+                            <input type="number" id="quantity" name="quantity" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Desired Pickup/Delivery Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Special Instructions</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Submit Order Request</button>
+                    </form>
+                    <div id="formResponse" class="form-response"></div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <!-- Footer content here -->
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Shirini Sweets" class="footer-logo-img">
+                <div class="footer-title">Shirini Sweets</div>
+                <p>Authentic Persian Cookies</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#cookies">Our Cookies</a></li>
+                    <li><a href="#contact">Place an Order</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> orders@shirinisweets.com</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Shirini Sweets. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
