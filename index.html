@@ -217,7 +217,12 @@
                 </div>
                 <div class="contact-form-container">
                     <h3>Quick Order Form</h3>
-                    <form id="orderForm" class="contact-form">
+                    <form id="orderForm" class="contact-form" action="https://formsubmit.co/Afsoon.fallahzadeh@gmail.com" method="POST">
+                        <!-- Hidden fields for FormSubmit configuration -->
+                        <input type="hidden" name="_subject" value="New Shirini Sweets Order Request!">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://imorshed1.github.io/shirini-sweets/thank-you.html">
+                        
                         <div class="form-group">
                             <label for="name">Your Name</label>
                             <input type="text" id="name" name="name" required>
